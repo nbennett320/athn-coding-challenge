@@ -1,4 +1,4 @@
-import './views/Gameboard';
+import Gameboard from './views/Gameboard';
 import './css/App.css';
 
 const App = () => {

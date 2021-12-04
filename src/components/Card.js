@@ -3,10 +3,12 @@ import CardText from './CardText';
 import './css/Card.css';
 
 const Card = (props) => {
+  const styles = { backgroundColor: props.color }
   return (
-    <div className="Card">
-      <CardText>
-      </CartText>
+    <div className="Card" style={styles}>
+      <CardText color={props.textColor}>
+        { props.children }
+      </CardText>
     </div>
   );
 }

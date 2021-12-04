@@ -1,0 +1,227 @@
+{
+  "categories": [
+    {
+      "category": "Animal Anagrams",
+      "cr_pairs": [
+        {
+          "clue": "an anagram of throne",
+          "response": "hornet",
+          "prefix": "what"
+        },
+        {
+          "clue": "item",
+          "response": "mite",
+          "prefix": "what"
+        },
+        {
+          "clue": "corona",
+          "response": "racoon",
+          "prefix": "what"
+        },
+        {
+          "clue": "field love",
+          "response": "field vole",
+          "prefix": "what"
+        },
+        {
+          "clue": "earth fiance plan",
+          "response": "african elephant",
+          "prefix": "what"
+        },
+        {
+          "clue": "mall radio",
+          "response": "armadillo",
+          "prefix": "what"
+        },
+        {
+          "clue": "maniac",
+          "response": "caiman",
+          "prefix": "what"
+        },
+        {
+          "clue": "hearts unaware wires",
+          "response": "eurasian water shrew",
+          "prefix": "what"
+        },
+        {
+          "clue": "chip fog lasagna",
+          "response": "galapagos finch",
+          "prefix": "what"
+        },
+        {
+          "clue": "corona",
+          "response": "racoon",
+          "prefix": "what"
+        },
+        {
+          "clue": "karate sigh threw",
+          "response": "great white shark",
+          "prefix": "what"
+        },
+        {
+          "clue": "lace cart swam",
+          "response": "scarlet macaw",
+          "prefix": "what"
+        },
+        {
+          "clue": "vibrate map",
+          "response": "vampire bat",
+          "prefix": "what"
+        },
+        {
+          "clue": "pagan ministry",
+          "response": "praying mantis",
+          "prefix": "what"
+        }
+      ]
+    },
+    {
+      "category": "Jeoportmanteau!",
+      "cr_pairs": [
+        {
+          "clue": "throne",
+          "response": "hornet"
+        },
+        {
+          "clue": "item",
+          "response": "mite"
+        },
+        {
+          "clue": "corona",
+          "response": "racoon"
+        },
+        {
+          "clue": "field love",
+          "response": "field vole"
+        },
+        {
+          "clue": "earth fiance plan",
+          "response": "african elephant"
+        },
+        {
+          "clue": "mall radio",
+          "response": "armadillo"
+        },
+        {
+          "clue": "maniac",
+          "response": "caiman"
+        },
+        {
+          "clue": "hearts unaware wires",
+          "response": "eurasian water shrew"
+        },
+        {
+          "clue": "chip fog lasagna",
+          "response": "galapagos finch"
+        },
+        {
+          "clue": "corona",
+          "response": "racoon"
+        },
+        {
+          "clue": "karate sigh threw",
+          "response": "great white shark"
+        },
+        {
+          "clue": "lace cart swam",
+          "response": "scarlet macaw"
+        },
+        {
+          "clue": "vibrate map",
+          "response": "vampire bat"
+        },
+        {
+          "clue": "pagan ministry",
+          "response": "praying mantis"
+        }
+      ]
+    },
+    {
+      "category": "Potpourri",
+      "cr_pairs": [
+        {
+          "clue": "throne",
+          "response": "hornet"
+        },
+        {
+          "clue": "item",
+          "response": "mite"
+        },
+        {
+          "clue": "corona",
+          "response": "racoon"
+        },
+        {
+          "clue": "field love",
+          "response": "field vole"
+        },
+        {
+          "clue": "earth fiance plan",
+          "response": "african elephant"
+        },
+        {
+          "clue": "mall radio",
+          "response": "armadillo"
+        },
+        {
+          "clue": "maniac",
+          "response": "caiman"
+        },
+        {
+          "clue": "hearts unaware wires",
+          "response": "eurasian water shrew"
+        },
+        {
+          "clue": "chip fog lasagna",
+          "response": "galapagos finch"
+        },
+        {
+          "clue": "corona",
+          "response": "racoon"
+        },
+        {
+          "clue": "karate sigh threw",
+          "response": "great white shark"
+        },
+        {
+          "clue": "lace cart swam",
+          "response": "scarlet macaw"
+        },
+        {
+          "clue": "vibrate map",
+          "response": "vampire bat"
+        },
+        {
+          "clue": "pagan ministry",
+          "response": "praying mantis"
+        }
+      ]
+    },
+    {
+      "category": "Programming Languages",
+      "cr_pairs": [
+        {
+          "clue": "throne",
+          "response": "hornet"
+        },
+        {
+          "clue": "throne",
+          "response": "hornet"
+        }
+      ]
+    },
+    {
+      "category": "-ologies by ",
+      "cr_pairs": [
+        {
+          "clue": "throne",
+          "response": "hornet"
+        },
+        {
+          "clue": "throne",
+          "response": "hornet"
+        }
+      ]
+    }
+  ]
+}

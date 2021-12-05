@@ -1,4 +1,11 @@
 {
+  "prices": [
+    100,
+    200,
+    300,
+    400,
+    500
+  ],
   "categories": [
     {
       "category": "Animal Anagrams",

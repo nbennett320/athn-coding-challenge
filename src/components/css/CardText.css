@@ -1,4 +1,9 @@
 .CardText {
-
+  font-family: 'Anton', sans-serif;
+  font-size: 30px;
+  font-size: 3.2vw; 
+  text-overflow: ellipsis;
+  filter: drop-shadow(5px 5px 0px black);
+  text-align: center;
 }
 

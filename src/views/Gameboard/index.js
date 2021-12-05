@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from '../../components/Card';
 import GameCardTable from './GameCardTable';
-import TitleRow from './TitleRow';
+import TitleRow from './TitleRow.js';
 import Data from '../../assets/Data.json';
 import './css/Gameboard.css';
 

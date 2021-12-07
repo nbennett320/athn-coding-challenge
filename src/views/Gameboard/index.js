@@ -28,8 +28,10 @@ const Gameboard = () => {
 
   return (
     <div className="Gameboard">
-      <TitleRow titles={categories} />
-      <GameCardTable titles={categories} rows={pairs} cols={prices} />
+      <div className="Gameboard__Container">
+        <TitleRow titles={categories} />
+        <GameCardTable rows={pairs} cols={prices} />
+      </div>
     </div>
   );
 }

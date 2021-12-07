@@ -2,7 +2,8 @@ import React from 'react';
 import './css/CardText.css';
 
 const CardText = (props) => {
-  const styles = { color: props.color }
+  const styles = { color: props.color };
+
   return (
     <div className="CardText" style={styles}>
       { props.children }

@@ -29,7 +29,7 @@ const Gameboard = () => {
   return (
     <div className="Gameboard">
       <TitleRow titles={categories} />
-      <GameCardTable rows={pairs} cols={prices} />
+      <GameCardTable titles={categories} rows={pairs} cols={prices} />
     </div>
   );
 }

@@ -1,15 +1,13 @@
 .CardText {
   display: block;
-  line-height: 1em;
-  max-height: 2em;
-  word-wrap: break-word;
+  word-wrap: none;
   font-family: 'Anton', sans-serif;
-  font-size: 30px;
-  font-size: 100%;
-  font-size: calc(5.2vh - 1rem); 
+  font-size: calc(4.7vh - 1rem); 
   text-overflow: ellipsis;
   filter: drop-shadow(5px 5px 0px black);
   text-align: center;
   word-break: break-word;
+  margin-left: auto;
+  margin-right: auto;
 }
 

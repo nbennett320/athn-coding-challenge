@@ -3,11 +3,21 @@ import Card from '../../components/Card';
 import './css/TitleRow.css';
 
 const TitleRow = (props) => {
+  const [height, setHeight] = React.useState();
+  const [styles, setStyles] = React.useState();
+  const ref = React.useRef(null);
+
+  React.useEffect(() => {
+    setHeight(ref?.current?.clientHeight);
+    setStyles({ height: (height > 0) ? height : 'auto' })
+    console.log(height, styles, ref)
+  }, [ref, height])
+  
   return (
-    <div className="TitleRow">
+    <div ref={ref} className="TitleRow">
       {props?.titles?.map((el, i) => (
-        <div className="TitleRow__CardContainer">
-          <Card key={`headers${i}`} color="darkblue" textColor="white">
+        <div key={`title${i}`} style={styles} className="TitleRow__CardContainer">
+          <Card color="darkblue" textColor="white">
             {el}
           </Card>
         </div>
@@ -17,3 +27,4 @@ const TitleRow = (props) => {
 }
 
 export default TitleRow;
+

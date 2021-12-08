@@ -5,6 +5,7 @@ const App = () => {
   return (
     <div className="App">
       <Gameboard />
+      <div id="modal-root"></div>
     </div>
   );
 }

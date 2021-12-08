@@ -2,6 +2,9 @@
   width: 100%;
   height: 100%;
   background-color: black;
+  transition-property: filter;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
 }
 
 .Gameboard__Container {

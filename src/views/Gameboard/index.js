@@ -10,7 +10,8 @@ const Gameboard = () => {
   const [categories, setCategories] = React.useState([]);
   const [pairs, setPairs] = React.useState([]);
   const [prices, setPrices] = React.useState([]);
-
+  const [cardSelected, setCardSelected] = React.useState(false);
+  
   React.useEffect(() => {
     // fetch data
     const newCategories = Data.categories.map(el => el.category);
@@ -24,13 +25,18 @@ const Gameboard = () => {
     console.log(categories)
     console.log(pairs)
     console.log(prices)
-  }, [data]);
+    console.log(cardSelected)
+  }, [data, cardSelected]);
 
   return (
     <div className="Gameboard">
-      <div className="Gameboard__Container">
+      <div className={`Gameboard__Container ${cardSelected ? 'blur' : ''}`}>
         <TitleRow titles={categories} />
-        <GameCardTable rows={pairs} cols={prices} />
+        <GameCardTable 
+          rows={pairs} 
+          cols={prices} 
+          setCardSelected={setCardSelected}
+        />
       </div>
     </div>
   );

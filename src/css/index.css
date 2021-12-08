@@ -24,3 +24,7 @@ code {
   flex-direction: column;
 }
 
+.blur {
+  filter: blur(3px);
+}
+

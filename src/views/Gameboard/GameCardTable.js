@@ -17,6 +17,7 @@ const GameCardTable = (props) => {
                   price={el}
                   clue={clue}
                   response={response}
+                  setCardSelected={props.setCardSelected}
                 />
               );
             })}

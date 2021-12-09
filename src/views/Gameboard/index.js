@@ -6,7 +6,7 @@ import Data from '../../assets/Data.json';
 import './css/Gameboard.css';
 
 const Gameboard = () => {
-  const [data, setGameData] = React.useState();
+  const [data, setGameData] = React.useState(Data);
   const [categories, setCategories] = React.useState([]);
   const [pairs, setPairs] = React.useState([]);
   const [prices, setPrices] = React.useState([]);
@@ -14,19 +14,23 @@ const Gameboard = () => {
   
   React.useEffect(() => {
     // fetch data
-    const newCategories = Data.categories.map(el => el.category);
-    setCategories(newCategories);
+    console.log(data)
+    if(categories.length < 1) {
+      const newCategories = data.categories.map(el => el.category);
+      setCategories(newCategories);
+      const newPrices = data.prices;
+      setPrices(newPrices);
+      const newCardPairs = data.categories.map((el, i) => el.cr_pairs);
+      console.log("pairs", newCardPairs)
+      setPairs(newCardPairs);
+    }
     
-    const newPrices = Data.prices;
-    setPrices(newPrices);
     
-    const newCardPairs = Data.categories.map((el, i) => (i < prices.length) ? el.cr_pairs : null);
-    setPairs(newCardPairs);
     console.log(categories)
     console.log(pairs)
     console.log(prices)
     console.log(cardSelected)
-  }, [data, cardSelected]);
+  }, [cardSelected]);
 
   return (
     <div className="Gameboard">

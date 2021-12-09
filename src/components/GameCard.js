@@ -6,7 +6,6 @@ import './css/GameCard.css';
 
 const GameCard = (props) => {
   const [active, setActive] = React.useState(false);
-  const [flipped, setFlipped] = React.useState(false);
 
   React.useEffect(() => {
     props.setCardSelected(active);
@@ -20,24 +19,12 @@ const GameCard = (props) => {
   return (
     <div className="GameCard">
       {!active && <div onClick={toggleActiveCard} className="GameCard__Container">
-        <Card 
-          color="darkblue"
-          textColor="gold"
-        >
+        <Card color="darkblue" textColor="gold">
           ${ props.price }
         </Card>
-      
-       {/*<Card
-          onClick={() => setFlipped(false)}
-          className="GameCard__Back" 
-          color="darkblue" 
-          textColor="white"
-        >
-          { props.response }  
-        </Card>*/}
       </div>}
       
-      <Modal show={active}>
+      <Modal show={active} onClose={() => setActive(false)}>
         <ActiveCard {...props} />
       </Modal>
 

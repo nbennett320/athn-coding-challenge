@@ -1,9 +1,51 @@
 .ActiveCard {
   display: flex;
   margin: auto auto;
-  background-color: darkblue;
-  min-height: 20%;
-  min-width: 40%;
+  min-height: 20vh;
+  min-width: 40vw;
+  height: 100%;
+  width: 100%;
   border-radius: 4px;
+}
+
+.ActiveCard__Container {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  min-height: 40px;
+  transition: transform 500ms;
+  transform-style: preserve-3d; 
+}
+
+.ActiveCard__Flipped {
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  min-height: 40px;
+
+  transition: transform 500ms;
+  transform-style: preserve-3d; 
+}
+
+.ActiveCard__Transition {
+  transform: rotateX(180deg) ;
+  transition: transform 500ms;
+}
+
+.ActiveCard__Front,
+.ActiveCard__Back {
+  height: 100%;
+  width: 100%;
+  background: white;
+  color: blue;
+  text-align: center;
+  font-size: 60px;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.ActiveCard__Back {
+  background: blue;
+  color: white;
+  transform: rotateX(180deg);
+  margin-top: -20vh;
 }
 

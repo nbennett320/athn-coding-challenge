@@ -1,7 +1,7 @@
 .Modal {
   display: flex;
   margin: auto auto;
-  height: inherit;
-  width: inherit;
+  width: auto;
+  height: auto;
 }
 

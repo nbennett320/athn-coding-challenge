@@ -7,6 +7,7 @@
   perspective: 500px;  
   border-top-width: 0;
   padding: 4px;
+  cursor: pointer;
 }
 
 .GameCard__Container {
@@ -14,43 +15,7 @@
   height: 100%;
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
   min-height: 40px;
-
   transition: transform 1s;
   transform-style: preserve-3d; 
 }
-
-.GameCard__Active {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
-  min-height: 40px;
-
-  transition: transform 1s;
-  transform-style: preserve-3d; 
-}
-
-.GameCard__Transition {
-  transform: rotateY(180deg) ;
-  transition: transform 0.5s;
-}
-
-.GameCard__Front,
-.GameCard__Back {
-  height: 100%;
-  width: 100%;
-  background: white;
-  line-height: 300px;
-  color: #03446A;
-  text-align: center;
-  font-size: 60px;
-  border-radius: 5px;
-  backface-visibility: hidden;
-}
-
-.GameCard__Back {
-  background: #03446A;
-  color: white;
-  transform: rotateY(180deg);
-}  
 

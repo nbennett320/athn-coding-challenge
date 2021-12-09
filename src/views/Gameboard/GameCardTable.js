@@ -6,11 +6,11 @@ const GameCardTable = (props) => {
   console.log(props)
   return (
     <div className="GameCardTable">
-      {props?.rows.map((col, i) => {
+      {props?.rows.map((row, i) => {
         return (
           <div className="GameCardTable__Column" key={`gamecard${i}`}>
-            {props.cols.map((el, j) => {
-              const { clue, response } = el;
+            {props?.cols.map((el, j) => {
+              const { clue, response } = row[j];
               return (
                 <GameCard 
                   key={`gamecard${j}`}

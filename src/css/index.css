@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import './theme.css';
 
 body {
   margin: 0;
@@ -26,5 +27,9 @@ code {
 
 .blur {
   filter: blur(3px);
+}
+
+.phantom {
+  opacity: 0;
 }
 

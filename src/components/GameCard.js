@@ -2,6 +2,7 @@ import React from 'react';
 import Card from './Card';
 import Modal from './Modal';
 import ActiveCard from './ActiveCard';
+import { theme } from '../util/theme';
 import './css/GameCard.css';
 
 const GameCard = (props) => {
@@ -11,20 +12,19 @@ const GameCard = (props) => {
     props.setCardSelected(active);
   }, [active]);
 
-  const toggleActiveCard = () => {
-    console.log("card clicked!")
+  const toggleActive = () => {
     setActive(!active);
   }
 
   return (
     <div className="GameCard">
-      {!active && <div onClick={toggleActiveCard} className="GameCard__Container">
-        <Card color="darkblue" textColor="gold">
+      <div onClick={toggleActive} className={`GameCard__Container ${active ? 'phantom' : ''}`}>
+        <Card color={theme.darkblue} textColor={theme.gold}>
           ${ props.price }
         </Card>
-      </div>}
+      </div>
       
-      <Modal show={active} onClose={() => setActive(false)}>
+      <Modal show={active} onClose={toggleActive}>
         <ActiveCard {...props} />
       </Modal>
 

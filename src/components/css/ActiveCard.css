@@ -30,12 +30,16 @@
   transition: transform 500ms;
 }
 
+.ActiveCard__Front {
+  background-color: var(--white);
+}
+
 .ActiveCard__Front,
 .ActiveCard__Back {
   height: 100%;
   width: 100%;
-  background: white;
-  color: blue;
+  background-color: --var(white);
+  color: var(--blue);
   text-align: center;
   font-size: 60px;
   border-radius: 5px;
@@ -43,8 +47,8 @@
 }
 
 .ActiveCard__Back {
-  background: blue;
-  color: white;
+  background-color: var(--white);
+  color: var(--blue);
   transform: rotateX(180deg);
   margin-top: -20vh;
 }

@@ -1,8 +1,13 @@
 import React from 'react';
-import Modal from './ActiveCard';
+import Card from './Card';
+import './css/ActiveCard.css';
 
 const ActiveCard = (props) => {
-  return ();
+  return (
+    <div className="ActiveCard">
+      Hello world 
+    </div>
+  );
 }
 
 export default ActiveCard;

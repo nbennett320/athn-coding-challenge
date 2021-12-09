@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from './Card';
 import Modal from './Modal';
+import ActiveCard from './ActiveCard';
 import './css/GameCard.css';
 
 const GameCard = (props) => {
@@ -36,11 +37,9 @@ const GameCard = (props) => {
         </Card>*/}
       </div>}
       
-     {!active || <Modal>
-        <div style={{ width: "200px", height: "100px", backgroundColor: "red", position:'fixed', top: 0, left: 0, margin: 'auto' }}>
-          Hello world
-        </div> 
-      </Modal>}
+      <Modal show={active}>
+        <ActiveCard {...props} />
+      </Modal>
 
     </div>
   );

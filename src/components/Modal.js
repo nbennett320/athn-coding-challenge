@@ -1,23 +1,17 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './css/Modal.css';
+import ModalBase from './ModalBase';
+import "./css/Modal.css";
 
 const Modal = (props) => {
-  const root = document.getElementById('modal-root');
-  const el = document.createElement('div');
-  el.classList.add('Modal')
-
-  const [container] = React.useState(el);
-
-  React.useEffect(() => {
-    root.appendChild(container);
-
-    return () => {
-      root.removeChild(container);
-    }
-  }, []);
-  
-  return ReactDOM.createPortal(props.children, el);
+  return (
+    <>
+    {props?.show && <ModalBase>
+      <div className="Modal">
+        { props.children }
+      </div>
+    </ModalBase>}
+    </>
+  );
 }
 
 export default Modal;

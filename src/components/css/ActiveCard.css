@@ -1,0 +1,9 @@
+.ActiveCard {
+  display: flex;
+  margin: auto auto;
+  background-color: darkblue;
+  min-height: 20%;
+  min-width: 40%;
+  border-radius: 4px;
+}
+

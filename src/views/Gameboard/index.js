@@ -20,7 +20,7 @@ const Gameboard = () => {
     const newPrices = Data.prices;
     setPrices(newPrices);
     
-    const newCardPairs = Data.categories.map((el, i) => { if(i < prices.length) return el.cr_pairs; else return });
+    const newCardPairs = Data.categories.map((el, i) => (i < prices.length) ? el.cr_pairs : null);
     setPairs(newCardPairs);
     console.log(categories)
     console.log(pairs)

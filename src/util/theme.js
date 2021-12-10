@@ -6,6 +6,7 @@ const theme = {
   blue: __root__.getPropertyValue("--blue"),
   gold: __root__.getPropertyValue("--gold"),
   white: __root__.getPropertyValue("--white"),
+  lightblue: __root__.getPropertyValue("--lightblue"),
 };
 
 export { theme };

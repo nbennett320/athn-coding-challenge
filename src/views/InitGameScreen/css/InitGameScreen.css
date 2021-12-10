@@ -1,0 +1,11 @@
+.InitGameScreen {
+  display: flex;
+  flex-direction: column;
+}
+
+.InitGameScreen__Container {
+  display: flex;
+  flex-direction: column;
+}
+
+

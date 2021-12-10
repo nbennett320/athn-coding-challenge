@@ -2,10 +2,11 @@ import React from 'react';
 import Card from '../../components/Card';
 import GameCardTable from './GameCardTable';
 import TitleRow from './TitleRow.js';
+import PlayerArea from './PlayerArea';
 import Data from '../../assets/Data.json';
 import './css/Gameboard.css';
 
-const Gameboard = () => {
+const Gameboard = (props) => {
   const [data, setGameData] = React.useState(Data);
   const [categories, setCategories] = React.useState([]);
   const [pairs, setPairs] = React.useState([]);
@@ -21,10 +22,10 @@ const Gameboard = () => {
       const newPrices = data.prices;
       setPrices(newPrices);
       const newCardPairs = data.categories.map((el, i) => el.cr_pairs);
-      console.log("pairs", newCardPairs)
       setPairs(newCardPairs);
+      
+      
     }
-    
     
     console.log(categories)
     console.log(pairs)
@@ -39,8 +40,10 @@ const Gameboard = () => {
         <GameCardTable 
           rows={pairs} 
           cols={prices} 
+          categories={categories}
           setCardSelected={setCardSelected}
         />
+        <PlayerArea players={props?.players} />
       </div>
     </div>
   );

@@ -1,0 +1,10 @@
+.PlayerArea {
+  display: flex;
+  flex-direction: row;
+}
+
+.PlayerArea__Player {
+  display: flex;
+  flex-direction: column;
+}
+

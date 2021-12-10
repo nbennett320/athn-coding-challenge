@@ -1,11 +1,32 @@
 .InitGameScreen {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: black;
 }
 
 .InitGameScreen__Container {
   display: flex;
   flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30%;
+  margin-bottom: 70%;
+  position: fixed;
+  background-color: var(--white);
+  padding: 10vh 15vw;
+  border-radius: 4px;
 }
 
+.InitGameScreen__Button {
+  margin-top: 16px;
+  font-size: 24px;
+}
+
+.InitGameScreen__PlayerEntry {
+  background-color: var(--white);
+}
 

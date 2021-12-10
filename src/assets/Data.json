@@ -11,81 +11,6 @@
       "category": "Animal Anagrams",
       "cr_pairs": [
         {
-          "clue": "an anagram of throne",
-          "response": "hornet",
-          "prefix": "what"
-        },
-        {
-          "clue": "item",
-          "response": "mite",
-          "prefix": "what"
-        },
-        {
-          "clue": "corona",
-          "response": "racoon",
-          "prefix": "what"
-        },
-        {
-          "clue": "field love",
-          "response": "field vole",
-          "prefix": "what"
-        },
-        {
-          "clue": "earth fiance plan",
-          "response": "african elephant",
-          "prefix": "what"
-        },
-        {
-          "clue": "mall radio",
-          "response": "armadillo",
-          "prefix": "what"
-        },
-        {
-          "clue": "maniac",
-          "response": "caiman",
-          "prefix": "what"
-        },
-        {
-          "clue": "hearts unaware wires",
-          "response": "eurasian water shrew",
-          "prefix": "what"
-        },
-        {
-          "clue": "chip fog lasagna",
-          "response": "galapagos finch",
-          "prefix": "what"
-        },
-        {
-          "clue": "corona",
-          "response": "racoon",
-          "prefix": "what"
-        },
-        {
-          "clue": "karate sigh threw",
-          "response": "great white shark",
-          "prefix": "what"
-        },
-        {
-          "clue": "lace cart swam",
-          "response": "scarlet macaw",
-          "prefix": "what"
-        },
-        {
-          "clue": "vibrate map",
-          "response": "vampire bat",
-          "prefix": "what"
-        },
-        {
-          "clue": "pagan ministry",
-          "response": "praying mantis",
-          "prefix": "what"
-        }
-      ]
-    },
-    {
-      "category": "Jeoportmanteau!",
-      "cr_pairs": [
-        {
           "clue": "throne",
           "response": "hornet"
         },
@@ -147,60 +72,61 @@
       "category": "Potpourri",
       "cr_pairs": [
         {
-          "clue": "throne",
-          "response": "hornet"
+          "clue": "The year Germany was unified",
+          "response": "1871"
         },
         {
-          "clue": "item",
-          "response": "mite"
+          "clue": "This US state is the smallest by lands area",
+          "response": "Delaware"
         },
         {
-          "clue": "corona",
-          "response": "racoon"
+          "clue": "Name of the first Roman emperor to convert to Christianity",
+          "response": "Constantine"
         },
         {
-          "clue": "field love",
-          "response": "field vole"
+          "clue": "The medjool date originates from this country",
+          "response": "Morocco"
         },
         {
-          "clue": "earth fiance plan",
-          "response": "african elephant"
+          "clue": "The capital of Turkey",
+          "response": "Ankara"
         },
         {
-          "clue": "mall radio",
-          "response": "armadillo"
+          "clue": "\"Tamagotchi\" is combination of two translated words",
+          "response": "egg and friend"
         },
         {
-          "clue": "maniac",
-          "response": "caiman"
+          "clue": "This x86 assembly instruction is Turing-complete",
+          "response": "MOV"
+        }
+      ]
+    },
+    {
+      "category": "Music",
+      "cr_pairs": [
+        {
+          "clue": "The lead singer of The Velvet Underground",
+          "response": "Lou Reed"
         },
         {
-          "clue": "hearts unaware wires",
-          "response": "eurasian water shrew"
+          "clue": "Justine Frischmann was guitarist and lead singer for this band",
+          "response": "Elastica"
         },
         {
-          "clue": "chip fog lasagna",
-          "response": "galapagos finch"
+          "clue": "The translation of the band name, \"Depeche Mode\"",
+          "response": "fast fashion"
         },
         {
-          "clue": "corona",
-          "response": "racoon"
+          "clue": "This genre is a reference of bands' guitarists to stare at the ground while playing",
+          "response": "shoegaze"
         },
         {
-          "clue": "karate sigh threw",
-          "response": "great white shark"
+          "clue": "The artist Yung Lean became popular on this platform before signing with any record labels",
+          "response": "Soundcloud"
         },
         {
-          "clue": "lace cart swam",
-          "response": "scarlet macaw"
-        },
-        {
-          "clue": "vibrate map",
-          "response": "vampire bat"
-        },
-        {
-          "clue": "pagan ministry",
-          "response": "praying mantis"
+          "clue": "This New York City music club became a famed venue of punk rock and new wave bands such as The Ramones and Talking Heads",
+          "response": "The CBGBs"
         }
       ]
     },
@@ -208,121 +134,61 @@
       "category": "Programming Languages",
       "cr_pairs": [
         {
-          "clue": "throne",
-          "response": "hornet"
+          "clue": "This purely functional language compiles to JavaScript, and is designed for creating web-browser user interfaces",
+          "response": "Elm"
         },
         {
-          "clue": "item",
-          "response": "mite"
+          "clue": "File extensions for this language's source code are .lol and .lols",
+          "response": "LOLCODE"
         },
         {
-          "clue": "corona",
-          "response": "racoon"
+          "clue": "This language's source code uses a variety of specific symbols to handle monadic and dyadic functions - which are built into the language",
+          "response": "APL"
         },
         {
-          "clue": "field love",
-          "response": "field vole"
+          "clue": "This language's main implementation is the compiler named GHC",
+          "response": "Haskell"
         },
         {
-          "clue": "earth fiance plan",
-          "response": "african elephant"
-        },
-        {
-          "clue": "mall radio",
-          "response": "armadillo"
-        },
-        {
-          "clue": "maniac",
-          "response": "caiman"
-        },
-        {
-          "clue": "hearts unaware wires",
-          "response": "eurasian water shrew"
-        },
-        {
-          "clue": "chip fog lasagna",
-          "response": "galapagos finch"
-        },
-        {
-          "clue": "corona",
-          "response": "racoon"
-        },
-        {
-          "clue": "karate sigh threw",
-          "response": "great white shark"
-        },
-        {
-          "clue": "lace cart swam",
-          "response": "scarlet macaw"
-        },
-        {
-          "clue": "vibrate map",
-          "response": "vampire bat"
-        },
-        {
-          "clue": "pagan ministry",
-          "response": "praying mantis"
+          "clue": "This esoteric language features a counter-intutive 'crazy operation' and self-altering code",
+          "response": "Malbolge"
         }
       ]
     },
     {
-      "category": "-ologies by ",
+      "category": "US History",
       "cr_pairs": [
         {
-          "clue": "throne",
-          "response": "hornet"
+          "clue": "This is the name of the first US colony, founded in 1607",
+          "response": "Jamestown"
         },
         {
-          "clue": "item",
-          "response": "mite"
+          "clue": "This US state is the smallest by area",
+          "response": "Delaware"
         },
         {
-          "clue": "corona",
-          "response": "racoon"
+          "clue": "This famous American political theorist and philosopher is best known for his works, \"Common Sense\" and \"The American Crisis\"",
+          "response": "Thomas Paine"
         },
         {
-          "clue": "field love",
-          "response": "field vole"
+          "clue": "This city was the first capital of the United States",
+          "response": "Philadelphia"
         },
         {
-          "clue": "earth fiance plan",
-          "response": "african elephant"
+          "clue": "This act was signed by Theodore Roosevelt in 1906 to establish the protection of natural and cultural resources in the United States",
+          "response": "American Antiquities Act in 1906"
         },
         {
-          "clue": "mall radio",
-          "response": "armadillo"
+          "clue": "The name of the first woman to serve as US secretary of state in 1997",
+          "response": "Madeleine Albright"
         },
         {
-          "clue": "maniac",
-          "response": "caiman"
+          "clue": "The year The Mall of America opened",
+          "response": "1992"
         },
         {
-          "clue": "hearts unaware wires",
-          "response": "eurasian water shrew"
-        },
-        {
-          "clue": "chip fog lasagna",
-          "response": "galapagos finch"
-        },
-        {
-          "clue": "corona",
-          "response": "racoon"
-        },
-        {
-          "clue": "karate sigh threw",
-          "response": "great white shark"
-        },
-        {
-          "clue": "lace cart swam",
-          "response": "scarlet macaw"
-        },
-        {
-          "clue": "vibrate map",
-          "response": "vampire bat"
-        },
-        {
-          "clue": "pagan ministry",
-          "response": "praying mantis"
+          "clue": "The year Ohio was retroactively made a state",
+          "response": "1953"
         }
       ]
     }

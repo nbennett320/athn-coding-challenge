@@ -7,6 +7,7 @@ import './css/GameCard.css';
 
 const GameCard = (props) => {
   const [active, setActive] = React.useState(false);
+  const [hasBeenShown, setHasBeenShown] = React.useState(false);
 
   React.useEffect(() => {
     props.setCardSelected(active);
@@ -16,9 +17,14 @@ const GameCard = (props) => {
     setActive(!active);
   }
 
+  React.useEffect(() => {
+    const cardIndecies = props?.history.map(el => el.cardIndex);
+    setHasBeenShown(cardIndecies.includes(props?.cardIndex));
+  })
+
   return (
     <div className="GameCard">
-      <div onClick={toggleActive} className={`GameCard__Container ${active ? 'phantom' : ''}`}>
+      <div onClick={toggleActive} className={`GameCard__Container ${(active || hasBeenShown) ? 'phantom' : ''}`}>
         <Card color={theme.darkblue} textColor={theme.gold}>
           ${ props.price }
         </Card>

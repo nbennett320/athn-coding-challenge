@@ -8,9 +8,58 @@ import './css/ActiveCard.css';
 const ActiveCard = (props) => {
   const [flipped, setFlipped] = React.useState(false);
   const [userResponse, setUserResponse] = React.useState();
-  
+ 
+  const validateResponse = () => {
+    if(userResponse.toLowerCase() === props?.response.toLowerCase()) {
+      // handle success
+      const updatedPlayer = { 
+        ...props?.player,
+        wins: props?.player.wins + 1,
+        total: props?.player.total + props?.price
+      };
+      
+      const historyLog = {
+        cardIndex: props?.cardIndex,
+        result: 'win',
+        price: props?.price,
+        currentTotal: updatedPlayer?.total,
+        clue: props?.clue,
+        response: props?.response,
+        userResponse: userResponse
+      };
+      
+      props?.updatePlayer(updatedPlayer);
+      props?.updateHistory(historyLog);
+    } else {
+      // handle failure 
+      const updatedPlayer = { 
+        ...props?.player,
+        loses: props?.player.loses + 1,
+        total: props?.player.total - props?.price
+      };
+      
+      const historyLog = {
+        cardIndex: props?.cardIndex,
+        result: 'lose',
+        price: props?.price,
+        currentTotal: updatedPlayer?.total,
+        clue: props?.clue,
+        response: props?.response,
+        userResponse: userResponse
+      };
+
+      props?.updatePlayer(updatedPlayer);
+      props?.updateHistory(historyLog);
+    }
+
+
+  }
+
   const toggleFlip = () => {
     setFlipped(!flipped);
+
+    if(flipped)
+      validateResponse();
   }
 
   const handleInputResponse = (e) => {
@@ -18,14 +67,8 @@ const ActiveCard = (props) => {
   }
 
   const handleEnterKeyDown = (e) => {
-    if(userResponse === props?.response) {
-      // handle success
-      
-    } else {
-      // handle failure 
-       
-    }
     toggleFlip();
+    validateResponse();
   }
   
   return (

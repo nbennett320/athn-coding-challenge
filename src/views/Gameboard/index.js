@@ -24,11 +24,6 @@ const Gameboard = (props) => {
       const newCardPairs = data.categories.map((el, i) => el.cr_pairs);
       setPairs(newCardPairs);
     }
-    
-    console.log(categories)
-    console.log(pairs)
-    console.log(prices)
-    console.log(cardSelected)
   }, [cardSelected]);
 
   return (
@@ -39,7 +34,11 @@ const Gameboard = (props) => {
           rows={pairs} 
           cols={prices} 
           categories={categories}
+          player={props?.player}
+          history={props?.history}
           setCardSelected={setCardSelected}
+          updatePlayer={props?.updatePlayer}
+          updateHistory={props?.updateHistory}
         />
         <PlayerArea player={props?.player} />
       </div>

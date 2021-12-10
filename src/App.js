@@ -17,6 +17,10 @@ const App = () => {
     setPlayer(updated);
   }
 
+  const updateHistory = (item) => {
+    setHistory([...history, item]);
+  }
+
   return (
     <div className="App">
       {!playing 
@@ -25,7 +29,12 @@ const App = () => {
           updatePlayer={updatePlayer} 
           startGame={() => setPlaying(true)}
         />
-        : <Gameboard player={player} />
+        : <Gameboard 
+          player={player} 
+          history={history}
+          updatePlayer={updatePlayer} 
+          updateHistory={updateHistory}
+        />
       }
       <div id="modal-root"></div>
     </div>

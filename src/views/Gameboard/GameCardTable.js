@@ -3,7 +3,6 @@ import GameCard from '../../components/GameCard';
 import "./css/GameCardTable.css";
 
 const GameCardTable = (props) => {
-  console.log(props)
   return (
     <div className="GameCardTable">
       {props?.rows.map((row, i) => {
@@ -17,7 +16,12 @@ const GameCardTable = (props) => {
                   price={el}
                   clue={clue}
                   response={response}
+                  player={props?.player}
+                  history={props?.history}
+                  cardIndex={`(${i}, ${j})`}
                   setCardSelected={props.setCardSelected}
+                  updatePlayer={props?.updatePlayer}
+                  updateHistory={props?.updateHistory}
                 />
               );
             })}

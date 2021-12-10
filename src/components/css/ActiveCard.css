@@ -1,5 +1,6 @@
 .ActiveCard {
   display: flex;
+  flex-direction: column;
   margin: auto auto;
   min-height: 20vh;
   min-width: 40vw;
@@ -15,12 +16,14 @@
   min-height: 40px;
   transition: transform 500ms;
   transform-style: preserve-3d; 
+  box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.61);
+  -webkit-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.61);
+  -moz-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.61); 
 }
 
 .ActiveCard__Flipped {
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
   min-height: 40px;
-
   transition: transform 500ms;
   transform-style: preserve-3d; 
 }
@@ -31,25 +34,64 @@
 }
 
 .ActiveCard__Front {
-  background-color: var(--white);
+  background-color: var(--blue);
 }
 
 .ActiveCard__Front,
 .ActiveCard__Back {
   height: 100%;
   width: 100%;
-  background-color: --var(white);
+  background-color: --var(darkblue);
   color: var(--blue);
   text-align: center;
   font-size: 60px;
   border-radius: 5px;
   backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .ActiveCard__Back {
-  background-color: var(--white);
-  color: var(--blue);
+  background-color: var(--blue);
+  filter: brightness(125%);
+  color: var(--white);
   transform: rotateX(180deg);
-  margin-top: -20vh;
+  margin-top: calc(-20vh + 88px + 20px);
+}
+
+.ActiveCard__BackLabel {
+  position: absolute;
+  top: -8px;
+  left: -12px;
+  transform: scale(.5);
+  transform-style: preserve-3d;
+}
+
+.ActiveCard__AnswerArea {
+  margin-top: 40px;
+}
+
+.ActiveCard__AnswerAreaContainer {
+  background-color: var(--white);
+  height: 60px;
+  max-height: 60px;
+  padding-top: 8px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.61);
+  -webkit-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.61);
+  -moz-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.61);
+}
+
+.ActiveCard__AnswerInputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ActiveCard__AnswerInput {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 

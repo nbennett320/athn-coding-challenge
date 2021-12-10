@@ -15,6 +15,11 @@ const InitGameScreen = (props) => {
       props?.startGame();
   }
 
+  const handleEnterKeyDown = () => {
+    if(props?.player?.name?.length > 0)
+      props?.startGame();
+  }
+
   return (
     <div className="InitGameScreen">
       <div className="InitGameScreen__Container">
@@ -24,6 +29,7 @@ const InitGameScreen = (props) => {
               id="player-input"
               label="Player Name"
               onChange={handleNameInput} 
+              onEnterKeyDown={handleEnterKeyDown}
             />
           </div>
         </div>

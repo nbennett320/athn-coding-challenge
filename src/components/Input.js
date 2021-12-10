@@ -5,6 +5,14 @@ import './css/Input.css';
 const Input = (props) => {
   const inputStyles = { ...props?.styles, backgroundColor: props?.color ? props.color : theme.white };
   const textStyles = { color: props?.textColor ? props.textColor : theme.black };
+  const handleKeyDown = (e) => {
+    try {
+      if(e.code === "Enter")
+        props?.onEnterKeyDown(e);
+    } catch(err) {
+      return;
+    }
+  }
 
   return (
     <div 
@@ -19,6 +27,7 @@ const Input = (props) => {
         className="Input__Input"
         id={props?.id}
         onChange={e => props?.onChange(e)}
+        onKeyDown={handleKeyDown}
         placeholder={props?.placeholder}
       />
     </div>

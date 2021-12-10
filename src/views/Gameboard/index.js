@@ -1,9 +1,9 @@
 import React from 'react';
-import Card from '../../components/Card';
 import GameCardTable from './GameCardTable';
 import TitleRow from './TitleRow.js';
 import PlayerArea from './PlayerArea';
 import Data from '../../assets/Data.json';
+import { shuffle } from  '../../util/shuffle';
 import './css/Gameboard.css';
 
 const Gameboard = (props) => {
@@ -21,7 +21,7 @@ const Gameboard = (props) => {
       setCategories(newCategories);
       const newPrices = data.prices;
       setPrices(newPrices);
-      const newCardPairs = data.categories.map((el, i) => el.cr_pairs);
+      const newCardPairs = data.categories.map((el, i) => shuffle(el.cr_pairs));
       setPairs(newCardPairs);
     }
   }, [cardSelected]);

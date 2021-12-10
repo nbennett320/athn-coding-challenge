@@ -4,7 +4,7 @@ import './css/Input.css';
 
 const Input = (props) => {
   const inputStyles = { ...props?.styles, backgroundColor: props?.color ? props.color : theme.white };
-  const textStyles = { color: props?.textColor ? props.textColor : theme.black };
+  
   const handleKeyDown = (e) => {
     try {
       if(e.code === "Enter")

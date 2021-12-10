@@ -4,6 +4,7 @@
   margin: auto auto;
   min-height: 20vh;
   min-width: 40vw;
+  max-width: 60vw;
   height: 100%;
   width: 100%;
   border-radius: 4px;
@@ -94,3 +95,11 @@
   margin-right: auto;
 }
 
+.ActiveCard__Text {
+  font-size: 3rem;
+  width: 70%;
+}
+
+.ActiveCard__SmallText {
+  font-size: 2.5rem;
+}

@@ -54,7 +54,6 @@ const ActiveCard = (props) => {
       props?.updateHistory(historyLog);
     }
 
-
   }
 
   const toggleFlip = () => {
@@ -83,22 +82,22 @@ const ActiveCard = (props) => {
     <div className="ActiveCard" >
       <div className={`ActiveCard__Container ${flipped ? 'ActiveCard__Transition' : ''}`}>
         <div className="ActiveCard__Front" onClick={toggleFlip}>
-          <CardText color={theme.white} >
+          <CardText color={theme.white} className="ActiveCard__Text">
             { props?.clue }
           </CardText>
         </div>
         <div 
-          style={{backgroundColor: userResponse === props?.response ? theme.green : theme.red}} 
+          style={{backgroundColor: userResponse?.toLowerCase() === props?.response?.toLowerCase() ? theme.green : theme.red}} 
           className="ActiveCard__Back" 
           onClick={toggleFlip}
         >
           <div className="ActiveCard__BackLabel">
-            <CardText color={theme.white} >
+            <CardText color={theme.white} className="ActiveCard__SmallText">
               Answer: 
             </CardText>
           </div>  
 
-          <CardText color={theme.white} >
+          <CardText color={theme.white} className="ActiveCard__Text">
             { props?.response }
           </CardText>
         </div>

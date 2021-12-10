@@ -3,6 +3,8 @@
   left: 50%;
   width: calc(100% - 8px);
   min-height: 80px;
+  max-height: 20vh;
+  height: 10vh;
   float: left;
   perspective: 500px;  
   border-top-width: 0;

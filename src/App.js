@@ -5,31 +5,27 @@ import './css/App.css';
 
 const App = () => {
   const [history, setHistory] = React.useState([]);
-  const [players, setPlayers] = React.useState([
-    { 
-      name: "", 
-      total: 0, 
-      wins: 0, 
-      loses: 0,
-    }
-  ]);
+  const [player, setPlayer] = React.useState({ 
+    name: "", 
+    total: 0, 
+    wins: 0, 
+    loses: 0,
+  });
   const [playing, setPlaying] = React.useState(false);
 
-  const updatePlayer = (player, index) => {
-    const updatedPlayers = [...players];
-    updatedPlayers[index] = player;
-    setPlayers(updatedPlayers);
+  const updatePlayer = (updated) => {
+    setPlayer(updated);
   }
 
   return (
     <div className="App">
       {!playing 
         ? <InitGameScreen 
-          players={players} 
+          player={player} 
           updatePlayer={updatePlayer} 
           startGame={() => setPlaying(true)}
         />
-        : <Gameboard players={players} />
+        : <Gameboard player={player} />
       }
       <div id="modal-root"></div>
     </div>

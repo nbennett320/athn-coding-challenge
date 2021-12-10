@@ -1,18 +1,19 @@
 import React from 'react';
+import CardText from '../../components/CardText';
+import { theme } from '../../util/theme';
+import './css/PlayerArea.css';
 
 const PlayerArea = (props) => {
   return (
     <div className="PlayerArea">
-      {props?.players.map((player, i) => {
-        <div className="PlayerArea__Player">
-          <span>
-            { player?.name }
-          </span>
-          <span>
-            ${ player?.total }
-          </span>
-        </div>
-      })}
+      <div className="PlayerArea__Player">
+        <CardText color={theme.white}>
+          { props?.player?.name }
+        </CardText>
+        <CardText color={theme.gold}>
+          ${ props?.player?.total }
+        </CardText>
+      </div>
     </div>
   );
 }

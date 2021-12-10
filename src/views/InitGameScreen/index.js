@@ -5,38 +5,32 @@ import { theme } from '../../util/theme';
 import './css/InitGameScreen.css';
 
 const InitGameScreen = (props) => {
-  const [playerCount, setPlayerCount] = React.useState(1);
- 
-  const handleCountInput = (e) => { 
-    const newVal = e.target.value;
-    setPlayerCount(e.target.value); 
+  const handleNameInput = (e) => {
+    const updatedPlayer = { ...props?.player, name: e.target.value };
+    props?.updatePlayer(updatedPlayer);
   }
 
-  const handleNameInput = (e, player, index) => {
-    const updatedPlayer = { ...player, name: e.target.value };
-    props?.updatePlayer(updatedPlayer, index);
+  const handleClick = () => {
+    if(props?.player?.name?.length > 0)
+      props?.startGame();
   }
 
   return (
     <div className="InitGameScreen">
       <div className="InitGameScreen__Container">
         <div className="InitGameScreen__PlayerEntries">
-          {props?.players.map((player, i) => {
-            return (
-              <div className="InitGameScreen__PlayerEntry" key={`player${i}`}>
-                <Input
-                  id="player-input"
-                  label="Player Name"
-                  onChange={(e) => handleNameInput(e, player, i)} 
-                />
-              </div>
-            );
-          })}
+          <div className="InitGameScreen__PlayerEntry">
+            <Input
+              id="player-input"
+              label="Player Name"
+              onChange={handleNameInput} 
+            />
+          </div>
         </div>
 
         <Button 
           className="InitGameScreen__Button"
-          onClick={props?.startGame}
+          onClick={handleClick}
           color={theme.white}
           textColor={theme.black}
         >

@@ -54,7 +54,6 @@
 
 .ActiveCard__Back {
   background-color: var(--blue);
-  filter: brightness(125%);
   color: var(--white);
   transform: rotateX(180deg);
   margin-top: calc(-20vh + 88px + 20px);

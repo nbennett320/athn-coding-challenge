@@ -87,7 +87,11 @@ const ActiveCard = (props) => {
             { props?.clue }
           </CardText>
         </div>
-        <div className="ActiveCard__Back" onClick={toggleFlip}>
+        <div 
+          style={{backgroundColor: userResponse === props?.response ? theme.green : theme.red}} 
+          className="ActiveCard__Back" 
+          onClick={toggleFlip}
+        >
           <div className="ActiveCard__BackLabel">
             <CardText color={theme.white} >
               Answer: 

@@ -10,6 +10,8 @@ const ActiveCard = (props) => {
   const [userResponse, setUserResponse] = React.useState();
  
   const validateResponse = () => {
+    if(userResponse === undefined) return;
+    if(userResponse?.length === 0) return;
     if(userResponse.toLowerCase() === props?.response.toLowerCase()) {
       // handle success
       const updatedPlayer = { 
@@ -56,10 +58,12 @@ const ActiveCard = (props) => {
   }
 
   const toggleFlip = () => {
-    setFlipped(!flipped);
-
-    if(flipped)
+    if(!flipped && userResponse?.length > 0) {
+      setFlipped(!flipped);
       validateResponse();
+    } else {
+      props?.toggleActive();
+    }
   }
 
   const handleInputResponse = (e) => {
@@ -67,8 +71,12 @@ const ActiveCard = (props) => {
   }
 
   const handleEnterKeyDown = (e) => {
-    toggleFlip();
-    validateResponse();
+    if(!flipped) {
+      toggleFlip();
+      validateResponse();
+    } else {
+      props?.toggleActive(); 
+    }
   }
   
   return (

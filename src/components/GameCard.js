@@ -31,7 +31,7 @@ const GameCard = (props) => {
       </div>
       
       <Modal show={active} onClose={toggleActive}>
-        <ActiveCard {...props} />
+        <ActiveCard {...props} toggleActive={toggleActive} />
       </Modal>
 
     </div>
